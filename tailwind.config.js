@@ -5,6 +5,7 @@ module.exports = {
       extend: {},
     },
     plugins: [],
+  
     spacing: {
         '1': '8px',
         '2': '12px',
@@ -13,4 +14,5 @@ module.exports = {
         '5': '32px',
         '6': '48px',
       }
+
   }
