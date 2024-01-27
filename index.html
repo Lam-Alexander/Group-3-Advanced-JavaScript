@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcuble</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <header class="bg-gray-800 text-white font-serif">
+    <div class="container flex justify-center">
+    <h1 class=" flex justify-content: center text-7xl p-2">Calcuble</h1>
+    </div>
+    <div class="container flex justify-center">
+    <h4 class="pb-3 font-thin">Convert until your hard as rock!</h4>
+    </div>
+    </header>
+
+  
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidePanel">
+            <button id="lbstokilo"> Pounds to Kilograms </button>
+
+            <button id="miletokilo"> Miles to Kilometers </button>
+
+            <button id="CtoF"> Celcius to Fahrenheit </button>
+
+            <button id="kilotolbs"> Kilograms to Pounds </button>
+
+            <button id="kilotomile"> Kilometers to Miles </button>
+
+            <button id="FtoC"> Fahrenheit to Celcius </button>
+        </div>
+    </div>
+
+    <div class="input">
+        <input id="inputBox" type="number" placeholder="Enter your conversion here">
+        
+    </div>
+    <div>
+
+        <p>The conversion from this to this is: <span id="calculation">0</span>.</p>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
