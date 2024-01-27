@@ -14,27 +14,35 @@
     </div>
     </header>
 
+  
+
 </head>
 <body>
     <div class="container">
         <div class="sidePanel">
-            <button> Pounds to Kilograms </button>
+            <button id="lbstokilo"> Pounds to Kilograms </button>
 
-            <button> Miles to Kilometers </button>
+            <button id="miletokilo"> Miles to Kilometers </button>
 
-            <button> Celcius to Fahrenheit </button>
+            <button id="CtoF"> Celcius to Fahrenheit </button>
 
-            <button> Kilograms to Pounds </button>
+            <button id="kilotolbs"> Kilograms to Pounds </button>
 
-            <button> Kilometers to Miles </button>
+            <button id="kilotomile"> Kilometers to Miles </button>
 
-            <button> Fahrenheit to Celcius </button>
+            <button id="FtoC"> Fahrenheit to Celcius </button>
         </div>
     </div>
 
     <div class="input">
-        <input placeholder="Enter your conversion here"></input>
-        <h1 id="outputBox"></h1>
+        <input id="inputBox" type="number" placeholder="Enter your conversion here">
+        
+    </div>
+    <div>
+
+        <p>The conversion from this to this is: <span id="calculation">0</span>.</p>
+
     </div>
 </body>
+<script src="script.js"></script>
 </html>
