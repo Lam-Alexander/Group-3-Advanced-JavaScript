@@ -1,10 +1,32 @@
-const g = [8,4,8,5,3,5,6,3,5];
+ar f = document.getElementById("inputBox").value;
+
+var l = parseFloat(f);
+
+console.log(l);
 
 
-const Convert = (kg, km, C) => {if (kg != 0){return kg * 0.454;} if (km != 0){return km * 1.609344;}if (C != 0){return C * 1.8;}}
+
+//var number = parseInt(f.value, 10);
+//f.setAttribute("type", "text");
 
 
-for (var i = 1; i != g.length; i++){ console.log(Convert(0, g[i], 0));}
+
+let calculation = document.getElementById("calculation"); // changes the html element
+
+console.log(f); // prints the element to the console as a test
+
+
+let lbstokilo = document.getElementById("lbstokilo");  lbstokilo.addEventListener('click', () =>  document.getElementById("calculation").innerHTML = l * 2.20462262);
+
+let miletokilo = document.getElementById("miletokilo"); const Convert_milestokm = (miles) =>  calculation.innerHTML = miles * 1.609344; miletokilo.addEventListener('click', Convert_milestokm);
+
+let CtoF = document.getElementById("CtoF"); const Convert_CtoF = (F) =>  calculation.innerHTML = (F - 32) / 1.8; CtoF.addEventListener('click', Convert_CtoF);
+
+let kilotolbs = document.getElementById("kilotolbs"); const Convert_kgtolbs = (lbs) => calculation.innerHTML = lbs * 0.454; kilotolbs.addEventListener('click', Convert_kgtolbs);
+
+let kilotomile = document.getElementById("kilotomile"); const Convert_kmtomiles = (km) =>  calculation.innerHTML = km * 0.621371; kilotomile.addEventListener('click', Convert_kmtomiles);
+
+let FtoC = document.getElementById("FtoC"); const Convert_FtoC = (C) => calculation.innerHTML = (C * 1.8) + 32; FtoC.addEventListener('click', Convert_FtoC);
 
 
 
