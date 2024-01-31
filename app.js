@@ -1,32 +1,23 @@
-var f = document.getElementById("inputBox").value;
-
-var l = parseFloat(f);
-
-console.log(l);
+let f;
 
 
-
-//var number = parseInt(f.value, 10);
-//f.setAttribute("type", "text");
-
-
+Arraycalculation = (output, value) => {
+    for(let i = output.length - 1; i >= 0; i--){ output[i] = (output[i] * value).toFixed(3); calculation.innerHTML = output;}
+  }
 
 let calculation = document.getElementById("calculation"); // changes the html element
 
-console.log(f); // prints the element to the console as a test
 
+let lbstokilo = document.getElementById("lbstokilo");  lbstokilo.addEventListener('click', () => { f = document.getElementById("input").value; Arraycalculation(f.split(","), 0.454);});
 
-let lbstokilo = document.getElementById("lbstokilo");  lbstokilo.addEventListener('click', () =>  document.getElementById("calculation").innerHTML = l * 2.20462262);
+//Arraycalculation(f.split(","), (f * 1.8) + 32);
 
-let miletokilo = document.getElementById("miletokilo"); const Convert_milestokm = (miles) =>  calculation.innerHTML = miles * 1.609344; miletokilo.addEventListener('click', Convert_milestokm);
+let miletokilo = document.getElementById("miletokilo");  miletokilo.addEventListener('click', () => { f = document.getElementById("input").value; Arraycalculation(f.split(","), 1.609344);});
 
-let CtoF = document.getElementById("CtoF"); const Convert_CtoF = (F) =>  calculation.innerHTML = (F - 32) / 1.8; CtoF.addEventListener('click', Convert_CtoF);
+let CtoF = document.getElementById("CtoF");  CtoF.addEventListener('click', () => { f = document.getElementById("input").value; const output = f.split(","); for(let i = output.length - 1; i >= 0; i--){output[i] = ((output[i] - 32) / 1.8).toFixed(3); calculation.innerHTML = output}});
 
-let kilotolbs = document.getElementById("kilotolbs"); const Convert_kgtolbs = (lbs) => calculation.innerHTML = lbs * 0.454; kilotolbs.addEventListener('click', Convert_kgtolbs);
+let kilotolbs = document.getElementById("kilotolbs");  kilotolbs.addEventListener('click', () => { f = document.getElementById("input").value; Arraycalculation(f.split(","), 2.204623);});
 
-let kilotomile = document.getElementById("kilotomile"); const Convert_kmtomiles = (km) =>  calculation.innerHTML = km * 0.621371; kilotomile.addEventListener('click', Convert_kmtomiles);
+let kilotomile = document.getElementById("kilotomile");  kilotomile.addEventListener('click', () => { f = document.getElementById("input").value; Arraycalculation(f.split(","), 0.621371);});
 
-let FtoC = document.getElementById("FtoC"); const Convert_FtoC = (C) => calculation.innerHTML = (C * 1.8) + 32; FtoC.addEventListener('click', Convert_FtoC);
-
-
-
+let FtoC = document.getElementById("FtoC");  FtoC.addEventListener('click', () => { f = document.getElementById("input").value; const output = f.split(","); for(let i = output.length - 1; i >= 0; i--){output[i] = ((output[i] * 1.8) + 32).toFixed(3); calculation.innerHTML = output}});
