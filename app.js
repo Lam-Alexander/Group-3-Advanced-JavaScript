@@ -22,3 +22,9 @@ let kilotolbs = document.getElementById("kilotolbs"); kilotolbs.addEventListener
 let kilotomile = document.getElementById("kilotomile"); kilotomile.addEventListener('click', () => { type.innerHTML = 'Kilometers to Miles'; f = document.getElementById("input").value; Arraycalculation(f.split(","), 0.621371); });
 
 let FtoC = document.getElementById("FtoC"); FtoC.addEventListener('click', () => { type.innerHTML = 'Fahrenheit to Celcius'; f = document.getElementById("input").value; const output = f.split(","); for (let i = output.length - 1; i >= 0; i--) { output[i] = ((output[i] * 1.8) + 32).toFixed(3); calculation.innerHTML = output } });
+
+document.querySelectorAll('.sidePanel button').forEach(button => {
+  button.onclick = () => {
+    document.getElementById('type').textContent = button.innerText;
+  };
+});
