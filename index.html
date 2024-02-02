@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calcuble</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <header class="bg-gray-800 text-white font-serif">
-        <div class="flex items-center justify-center">
-            <h1 class="text-7xl p-2">Calcuble</h1>
-        </div>
+      <div class="flex items-center justify-center">
+        <h1 class="text-7xl p-2">Calcuble</h1>
+      </div>
 
-        <div class="flex items-center justify-center pb-3">
-            <h4>Convert until your hard as rock!</h4>
-        </div>
+      <div class="flex items-center justify-center pb-3">
+        <h4>Convert until your heart is full!</h4>
+      </div>
     </header>
+  </head>
 
+  <body>
+    <div class="flex flex-col justify-center items-center mt-12">
+      <div class="mt bottom-">
+        <p>
+          The conversion from <span id="type"></span> is:
+          
+          <div id="calculation" class="text-center text-9xl font-bold mt-6 mb-6">0</div>
 
+        </p>
+      </div>
 
-</head>
+      <div class="mt-12">
+        <input
+          id="input"
+          type="text"
+          placeholder="Enter your conversion here"
+          class="bg-gray-200 focus:bg-white border-2 border-black rounded-md w-60"
+        />
+      </div>
 
-<body>
-
-<div class="flex flex-col h-screen justify-center items-center">
-
-    <div class="mt bottom-">
-        <p>The conversion from <span id="type"></span> is: <span id="calculation">0</span>.</p>
-    </div>
-
-    <div class="mt-12">
-        <input id="input" type="text" placeholder="Enter your conversion here"    class="bg-gray-200 focus:bg-white border-2 border-black rounded-md w-60">
-
-    </div>
-
-
-    <div class="mt-10">
+      <div class="mt-10">
         <div class="sidePanel">
-            <button id="lbstokilo" class=" bg-red-500 text-white hover:bg-red-700 p-2 rounded-md m-4"> Pounds to Kilograms </button>
+          <button
+            id="lbstokilo"
+            class="bg-gray-600 text-white hover:bg-gray-800 p-2 rounded-md m-4"
+          >
+            Pounds to Kilograms
+          </button>
 
-            <button id="miletokilo" class=" bg-red-500 text-white hover:bg-red-700 p-2 rounded-md m-4"> Miles to Kilometers </button>
+          <button
+            id="miletokilo"
+            class="bg-gray-600 text-white hover:bg-gray-800 p-2 rounded-md m-4"
+          >
+            Miles to Kilometers
+          </button>
 
-            <button id="CtoF" class=" bg-red-500 text-white hover:bg-red-700 p-2 rounded-md m-4"> Celcius to Fahrenheit </button>
+          <button
+            id="CtoF"
+            class="bg-gray-600 text-white hover:bg-gray-800 p-2 rounded-md m-4"
+          >
+            Celcius to Fahrenheit
+          </button>
 
-            <button id="kilotolbs" class=" bg-red-500 text-white hover:bg-red-700 p-2 rounded-md m-4"> Kilograms to Pounds </button>
+          <button
+            id="kilotolbs"
+            class="bg-gray-600 text-white hover:bg-gray-800 p-2 rounded-md m-4"
+          >
+            Kilograms to Pounds
+          </button>
 
-            <button id="kilotomile" class=" bg-red-500 text-white hover:bg-red-700 p-2 rounded-md m-4"> Kilometers to Miles </button>
+          <button
+            id="kilotomile"
+            class="bg-gray-600 text-white hover:bg-gray-800 p-2 rounded-md m-4"
+          >
+            Kilometers to Miles
+          </button>
 
-            <button id="FtoC" class=" bg-red-500 text-white hover:bg-red-700 p-2 rounded-md m-4"> Fahrenheit to Celcius </button>
+          <button
+            id="FtoC"
+            class="bg-gray-600 text-white hover:bg-gray-800 p-2 rounded-md m-4"
+          >
+            Fahrenheit to Celcius
+          </button>
         </div>
+      </div>
     </div>
-</div>
-    
-
-   
-  
-</body>
-<script src="script.js"></script>
-
+  </body>
+  <script src="app.js"></script>
 </html>
